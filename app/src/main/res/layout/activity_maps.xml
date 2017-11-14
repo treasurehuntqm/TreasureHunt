@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.th.monicadzhaleva.treasurehunt.MapsActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.9"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        android:theme="@style/AppTheme"
+        android:visibility="visible"></android.support.v7.widget.Toolbar>
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/usergreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:text="Hello, User!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:elevation="2dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level : "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:elevation="2dp"
+        android:layout_alignBaseline="@+id/usergreeting"
+        android:layout_alignBottom="@+id/usergreeting"
+        android:layout_toRightOf="@+id/usergreeting"
+        android:layout_toEndOf="@+id/usergreeting"
+        android:layout_marginLeft="15dp"
+         />
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:text="Experience: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:elevation="2dp"
+        android:layout_alignBaseline="@+id/usergreeting"
+        android:layout_alignBottom="@+id/usergreeting"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hunt"
+        android:id="@+id/huntButton"
+        android:contentDescription="hunt"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/usergreeting"
+        android:layout_alignStart="@+id/usergreeting"
+        android:layout_marginTop="13dp"
+        android:elevation="2dp" />
+
+
+</RelativeLayout>

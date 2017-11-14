@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.th.monicadzhaleva.treasurehunt.UserActivity">
+    <item
+        android:id="@+id/action_userprofile"
+        android:orderInCategory="300"
+        android:title="User"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="ifRoom"></item>
+</menu>
